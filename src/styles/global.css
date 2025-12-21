@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", sans-serif;
+  --font-hyeon: "Do Hyeon", sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+
+  --color-gray-50: #FFFFFF;
+  --color-gray-100: #9D9D9D;
+  --color-gray-200: #5B5B5B;
+  --color-gray-300: #0E0B0B;
+  --color-gray-400: #000000;
+
+  --color-purple-100: #B2A8F1;
+  --color-purple-200: #A294FC;
+  --color-purple-300: #8A73D4;
+  --color-purple-400: #6577FF;
+  --color-blue-100: #8AA1CE;
+  --color-blue-200: #354055;
+  --color-blue-300: #443F73;
+
+  --color-dark-100: #3A3743;
+  --color-dark-200: #272738;
+  --color-dark-300: #27243D;
+
+  --color-danger: #FF4A4A;
+  --color-error: #FF4A4A;
+  --color-success: #59A165;
+  --spacing-8: 8px;
+  --spacing-12: 12px;
+  --spacing-24: 24px;
+  --spacing-32: 32px;
+  --spacing-48: 48px;
+
+  --radius-default: 8px;
+  --radius-lg: 12px;
+
+  --shadow-soft: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-floating: 0px 8px 24px rgba(0, 0, 0, 0.15);
+
+  --transition-duration: 200ms;
+  --transition-timing: ease-in-out;
+
+  --breakpoint-mobile: 320px;
+  --breakpoint-tablet: 768px;
+  --breakpoint-desktop: 1024px;
+}
+
+@layer utilities {
+  .bg-gradient-primary {
+    background-image: linear-gradient(180deg, #558AED 0%, #292046 100%);
+  }
+
+  .bg-gradient-electric {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #0F00DB 100%);
+  }
+
+  .bg-gradient-contrast {
+    background-image: linear-gradient(180deg, #2CFF1D 0%, #50604F 84%);
+  }
+}
+
+@layer utilities {
+  .active-scale {
+    transition: transform var(--transition-duration) var(--transition-timing);
+  }
+
+  .active-scale:active {
+    transform: scale(0.98);
+  }
+}
+
+@layer utilities {
+  @media (min-width: 320px) {
+    .mobile\:block {
+      display: block;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .tablet\:block {
+      display: block;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .desktop\:block {
+      display: block;
+    }
+  }
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.15;
+  z-index: 1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.5' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}

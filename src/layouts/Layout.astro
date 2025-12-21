@@ -1,3 +1,11 @@
+---
+import "@styles/global.css";
+import BlueBlob from "@/assets/blobs/blue-blob.astro";
+import YellowBlob from "@/assets/blobs/yellow-blob.astro";
+
+const { title } = Astro.props;
+---
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -5,18 +13,34 @@
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
+		<meta name="description" content="Dev Toolbox" />
+		<meta name="author" content="0xRef" />
+		<meta name="keywords" content="Dev Toolbox, 0xRef, DevToolbox, icons, images, videos, svg icons, background generator, libraries, tools, dev tools" />
+		
+		<meta name="theme-color" content="#ffffff" />
+		<meta name="msapplication-navbutton-color" content="#ffffff" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="#ffffff" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="Dev Toolbox" />
+		
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@0xRef" />
+		<meta name="twitter:title" content="Dev Toolbox" />
+		<meta name="twitter:description" content="Dev Toolbox" />
+		<meta name="twitter:image" content="https://devtoolbox.0xref.dev/og-image.png" />
+		
+		<meta name="og:title" content="Dev Toolbox" />
+		<meta name="og:description" content="Dev Toolbox" />
+		<meta name="og:image" content="https://devtoolbox.0xref.dev/og-image.png" />
+		<meta name="og:type" content="website" />
+		<meta name="og:url" content="https://devtoolbox.0xref.dev/" />
+		<meta name="og:site_name" content="Dev Toolbox" />
+		<meta name="og:locale" content="en_US" />
+		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-gray-300 overflow-x-hidden relative h-dvh">
+		<BlueBlob />
 		<slot />
+		<YellowBlob />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>
