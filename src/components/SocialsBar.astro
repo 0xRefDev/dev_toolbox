@@ -1,0 +1,35 @@
+---
+import Instagram from "@icons/Instagram.astro";
+import GitHub from "@icons/GitHub.astro";
+import LinkedIn from "@icons/LinkedIn.astro";
+import Web from "@icons/Web.astro";
+
+const iconComponents = {
+  Instagram,
+  GitHub,
+  LinkedIn,
+  Web,
+};
+
+const socials: { name: keyof typeof iconComponents; link: string }[] = [
+  { name: "Instagram", link: "https://www.instagram.com/0xref.dev/" },
+  { name: "GitHub", link: "https://github.com/0xRefDev" },
+  { name: "LinkedIn", link: "https://www.linkedin.com/" },
+  { name: "Web", link: "https://refh4ck.is-a.dev/" },
+];
+---
+
+<article
+  class="flex justify-center gap-6 w-fit absolute top-0.5 left-1/2 -translate-x-1/2 z-200 text-purple-100"
+>
+  {
+    socials.map(({ name, link }) => {
+      const Icon = iconComponents[name];
+      return (
+        <a href={link} aria-label={name} title={name} target="_blank" rel="noopener noreferrer">
+          <Icon />
+        </a>
+      );
+    })
+  }
+</article>
