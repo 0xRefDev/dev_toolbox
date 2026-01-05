@@ -1,24 +1,65 @@
 ---
 import Layout from "@layouts/Layout.astro";
+import { Image } from "astro:assets";
+import Toolbox from "@/assets/toolbox.webp";
 
-const navBarOptions = ["Home", "How to collab", "Our Purpose"];
+// Components
+import SocialsBar from "@components/SocialsBar.astro";
+import NavBar from "@components/NavBar.astro";
+
+// Icons
+import Arrow from "@icons/Arrow.astro";
 ---
 
 <Layout title="Dev Toolbox">
 	<section
-		class="notch-section rounded-4xl bg-dark-200/60"
+		class="notch-section rounded-4xl bg-dark-200/60 p-4"
 		style="clip-path: polygon(
 			0 0px,
-			calc(50% - 150px) 0px,
+			calc(50% - 150px) 0.5px,
 			calc(50% - 145px) 2px,
 			calc(50% + 145px) 2px,
-			calc(50% + 150px) 0px,
+			calc(50% + 150px) 0.5px,
 			100% 0px,
 			100% 100%,
 			0 100%
 		);"
 	>
 		<div class="notch-corner-right"></div>
+		<NavBar />
+		<SocialsBar />
+
+		<h1 class="text-center text-[3rem] pt-6 text-white font-bold uppercase">
+			The <span
+				class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
+				>best</span
+			> dev <span
+				class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
+				>toolbox</span
+			>
+		</h1>
+		<Image
+			src={Toolbox}
+			alt="Toolbox"
+			class="w-56 object-contain mx-auto relative z-200"
+		/>
+
+		<article class="py-6 flex justify-center flex-col items-center gap-2">
+			<h2 class="text-blue-text font-bold text-[1.4rem] text-center">
+				Power your next project.
+			</h2>
+			<p class="text-center text-white w-[50%] mx-auto text-[1.2rem]">
+				Explore the developer toolkit, from icon packs and background generators
+				to essential libraries and much more.
+			</p>
+			<a
+				href="/categories"
+				class="py-3 px-5 mt-1 mx-auto bg-purple-300 rounded-md text-white font-medium text-xl cursor-pointer flex items-center gap-3 shadow-floating hover:brightness-85 transition-all"
+			>
+				Explore resources
+				<Arrow />
+			</a>
+		</article>
 	</section>
 </Layout>
 
