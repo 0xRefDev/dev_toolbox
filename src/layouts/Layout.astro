@@ -4,7 +4,7 @@ import "@styles/global.css";
 import BlueBlob from "@/assets/blobs/blue-blob.astro";
 import YellowBlob from "@/assets/blobs/yellow-blob.astro";
 
-const { title } = Astro.props;
+const { title, hideContent } = Astro.props;
 ---
 
 <!doctype html>
@@ -44,11 +44,79 @@ const { title } = Astro.props;
 		<meta name="og:locale" content="en_US" />
 		<title>{title}</title>
 	</head>
-	<body class="overflow-hidden">
-		<main class="bg-gray-300 h-dvh relative overflow-hidden flex justify-center p-16 pt-13 pb-0">
+	<body class={hideContent ? "overflow-hidden pt-0" : "overflow-hidden pt-0 bg-gray-300"}>
+		<main
+			class={`bg-gray-300 h-dvh relative ${hideContent ? "overflow-hidden" : "overflow-x-hidden"} flex justify-center px-16 pb-0 ${hideContent ? "pt-12" : "pt-8.5"}`}
+		>
 			<BlueBlob />
 			<YellowBlob />
-			<slot />
+			<section
+				class={`notch-section rounded-t-4xl bg-dark-200/60 p-4 ${hideContent ? "mt-5 h-dvh" : "h-[85rem]"}`}
+				style="clip-path: polygon(
+			0 0px,
+			calc(50% - 150px) 0.5px,
+			calc(50% - 145px) 2px,
+			calc(50% + 145px) 2px,
+			calc(50% + 150px) 0.5px,
+			100% 0px,
+			100% 100%,
+			0 100%
+		);"
+			>
+				<div class="notch-corner-right"></div>
+				<slot />
+			</section>
 		</main>
 	</body>
 </html>
+
+<style>
+	.notch-section {
+		position: relative;
+		width: 100%;
+		border: 1px solid rgba(255, 255, 255, 0.25);
+		overflow: hidden;
+		backdrop-filter: blur(5rem);
+	}
+	.notch-section::before {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 280px;
+		height: 35px;
+		background: #0e0b0b;
+		border-bottom-left-radius: 32px;
+		border-bottom-right-radius: 32px;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+		z-index: 100;
+	}
+
+	.notch-section::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: calc(50% - 140px - 13px);
+		width: 15px;
+		height: 15px;
+		background-color: transparent;
+		border-top-right-radius: 32px;
+		border-right: 1px solid rgba(255, 255, 255, 0.1);
+		box-shadow: 5px -5px 0 0 #0e0b0b;
+		z-index: 100;
+	}
+
+	.notch-corner-right {
+		position: absolute;
+		top: 0;
+		right: calc(50% - 140px - 13px);
+		width: 15px;
+		height: 15px;
+		background-color: transparent;
+		border-top-left-radius: 32px;
+		box-shadow: -5px -5px 0 0 #0e0b0b;
+		border-left: 1px solid rgba(255, 255, 255, 0.1);
+		z-index: 100;
+	}
+</style>
