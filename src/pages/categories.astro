@@ -1,0 +1,42 @@
+---
+import Layout from "@layouts/Layout.astro";
+
+// Components
+import { Search } from "@components/Search.jsx";
+import NavBar from "@components/NavBar.astro";
+---
+
+<Layout title="Dev Toolbox" hideContent={false}>
+  <NavBar />
+  <h2
+    class="bg-gradient-electric bg-clip-text text-transparent text-[1.8rem] flex justify-center gap-6 w-fit absolute -top-1 left-1/2 -translate-x-1/2 z-200 font-medium uppercase do-hyeon"
+  >
+    Dev Toolbox
+  </h2>
+
+  <h1
+    class="text-center text-white font-bold text-[1.8rem] w-[40%] mx-auto mt-10 title-inner-shadow"
+  >
+    Explore the largest development toolbox with the best tools.
+  </h1>
+
+  <Search client:load />
+
+  <article class="grid grid-cols-3 grid-rows-3 h-dvh overflow-auto"></article>
+</Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+
+  .do-hyeon {
+    font-family: "Do Hyeon";
+  }
+
+  .title-inner-shadow {
+    background-color: white;
+    color: transparent;
+    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.622);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+</style>
