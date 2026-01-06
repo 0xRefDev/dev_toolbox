@@ -11,106 +11,41 @@ import NavBar from "@components/NavBar.astro";
 import Arrow from "@icons/Arrow.astro";
 ---
 
-<Layout title="Dev Toolbox">
-	<section
-		class="notch-section rounded-4xl bg-dark-200/60 p-4"
-		style="clip-path: polygon(
-			0 0px,
-			calc(50% - 150px) 0.5px,
-			calc(50% - 145px) 2px,
-			calc(50% + 145px) 2px,
-			calc(50% + 150px) 0.5px,
-			100% 0px,
-			100% 100%,
-			0 100%
-		);"
-	>
-		<div class="notch-corner-right"></div>
-		<NavBar />
-		<SocialsBar />
+<Layout title="Dev Toolbox" hideContent={true}>
+	<NavBar />
+	<SocialsBar />
 
-		<h1 class="text-center text-[3rem] pt-6 text-white font-bold uppercase">
-			The <span
-				class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
-				>best</span
-			> dev <span
-				class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
-				>toolbox</span
-			>
-		</h1>
-		<Image
-			src={Toolbox}
-			alt="Toolbox"
-			class="w-56 object-contain mx-auto relative z-200"
-		/>
+	<h1 class="text-center text-[3rem] pt-6 text-white font-bold uppercase">
+		The <span
+			class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
+			>best</span
+		> dev <span
+			class="bg-gradient-electric bg-clip-text text-transparent text-[3.8rem]"
+			>toolbox</span
+		>
+	</h1>
+	<Image
+		src={Toolbox}
+		alt="Toolbox"
+		class="w-56 object-contain mx-auto relative z-200"
+	/>
 
-		<article class="py-6 flex justify-center flex-col items-center gap-2">
-			<h2 class="text-blue-text font-bold text-[1.4rem] text-center">
-				Power your next project.
-			</h2>
-			<p class="text-center text-white w-[50%] mx-auto text-[1.2rem]">
-				Explore the developer toolkit, from icon packs and background generators
-				to essential libraries and much more.
-			</p>
-			<a
-				href="/categories"
-				class="py-3 px-5 mt-1 mx-auto bg-purple-300 rounded-md text-white font-medium text-xl cursor-pointer flex items-center gap-3 shadow-floating hover:brightness-85 transition-all"
-			>
-				Explore resources
-				<Arrow />
-			</a>
-		</article>
-	</section>
+	<article class="py-6 flex justify-center flex-col items-center gap-2">
+		<h2 class="text-blue-text font-bold text-[1.4rem] text-center">
+			Power your next project.
+		</h2>
+		<p class="text-center text-white w-[50%] mx-auto text-[1.2rem]">
+			Explore the developer toolkit, from icon packs and background generators
+			to essential libraries and much more.
+		</p>
+		<a
+			href="/categories"
+			class="py-3 px-5 mt-1 mx-auto bg-purple-300 rounded-md text-white font-medium text-xl cursor-pointer flex items-center gap-3 shadow-floating hover:brightness-85 transition-all"
+		>
+			Explore resources
+			<Arrow />
+		</a>
+	</article>
 </Layout>
 
-<style>
-	.notch-section {
-		position: relative;
-		height: 100dvh;
-		width: 100%;
-		border: 1px solid rgba(255, 255, 255, 0.25);
-		overflow: hidden;
-		backdrop-filter: blur(5rem);
-	}
-	.notch-section::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 280px;
-		height: 35px;
-		background: #0e0b0b;
-		border-bottom-left-radius: 32px;
-		border-bottom-right-radius: 32px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-		z-index: 100;
-	}
 
-	.notch-section::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: calc(50% - 140px - 13px);
-		width: 15px;
-		height: 15px;
-		background-color: transparent;
-		border-top-right-radius: 32px;
-		border-right: 1px solid rgba(255, 255, 255, 0.1);
-		box-shadow: 5px -5px 0 0 #0e0b0b;
-		z-index: 100;
-	}
-
-	.notch-corner-right {
-		position: absolute;
-		top: 0;
-		right: calc(50% - 140px - 13px);
-		width: 15px;
-		height: 15px;
-		background-color: transparent;
-		border-top-left-radius: 32px;
-		box-shadow: -5px -5px 0 0 #0e0b0b;
-		border-left: 1px solid rgba(255, 255, 255, 0.1);
-		z-index: 100;
-	}
-</style>
