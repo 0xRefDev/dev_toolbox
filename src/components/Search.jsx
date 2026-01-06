@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { SearchIcon } from "@icons/SearchIcon";
+import { SearchIcon } from "@/icons/SearchIcon";
 
 export function Search() {
   const [search, setSearch] = useState("");
