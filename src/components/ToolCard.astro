@@ -1,0 +1,44 @@
+---
+import Open from "@/icons/Open.astro";
+
+const { toolData } = Astro.props;
+
+const { name, url, description, type, image, tags = [] } = toolData;
+---
+
+<div
+  class="card-3d w-full h-full bg-white/10 border border-white/25 rounded-lg p-4 relative shadow-2xl"
+>
+  <a href={url} class="absolute right-3 top-3 text-white/45 z-10">
+    <Open class={"size-6"} />
+  </a>
+  <div class="size-16 rounded-xl overflow-hidden my-1">
+    <img src={image} alt="" class="border border-white/35 rounded-xl" />
+  </div>
+  <h2 class="text-white text-xl font-bold capitalize">{name}</h2>
+  <p class="text-white/75">{description}</p>
+
+  <div class="flex gap-2 mt-1">
+    {
+      tags.map((tag: string) => (
+        <span class="bg-gray-200/86 text-white/91 rounded-full px-3 py-1 text-sm border border-white/15">
+          {tag}
+        </span>
+      ))
+    }
+  </div>
+</div>
+
+<style>
+  .card-3d {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  .card-3d:hover {
+    transform: scale3d(1.015, 1.015, 1.015) translateZ(20px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+</style>
