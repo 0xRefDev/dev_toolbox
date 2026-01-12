@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { ToolCardReact } from "./ToolCardReact";
 
+import { ChevronR } from "@/icons/ChevronR";
+import { ChevronL } from "@/icons/ChevronL";
+
 export function ToolsList({ allTools }) {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -46,19 +49,19 @@ export function ToolsList({ allTools }) {
         ))}
       </div>
 
-      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-8 min-h-[600px]">
+      <article className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3 p-8 min-h-[600px]">
         {currentTools.map((tool, index) => (
           <ToolCardReact key={`${tool.name}-${index}`} toolData={tool} />
         ))}
       </article>
 
-      <div className="flex items-center justify-center gap-2 pb-8">
+      <div className="flex items-center justify-center gap-2 pt-7">
         <button
           onClick={() => handlePageChange(currentPage - 1)}
           disabled={currentPage === 1}
-          className="px-4 py-2 rounded-lg bg-white/10 border border-white/25 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-white/20 transition-colors"
+          className="p-2 rounded-full bg-white/10 border border-white/25 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-white/20 transition-colors cursor-pointer"
         >
-          Previous
+          <ChevronL />
         </button>
         
         <div className="flex gap-2">
@@ -73,7 +76,7 @@ export function ToolsList({ allTools }) {
                 <button
                   key={page}
                   onClick={() => handlePageChange(page)}
-                  className={`w-10 h-10 rounded-lg border transition-colors ${
+                  className={`w-10 h-10 rounded-full text-sm border transition-colors cursor-pointer ${
                     currentPage === page
                       ? "bg-white/25 border-white/50 text-white font-bold"
                       : "bg-white/10 border-white/25 text-white/75 hover:bg-white/20"
@@ -88,18 +91,18 @@ export function ToolsList({ allTools }) {
             return null;
           })}
         </div>
-        
+          
         <button
           onClick={() => handlePageChange(currentPage + 1)}
           disabled={currentPage === totalPages}
-          className="px-4 py-2 rounded-lg bg-white/10 border border-white/25 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-white/20 transition-colors"
+          className="p-2 rounded-full bg-white/10 border border-white/25 text-white disabled:opacity-50 disabled:cursor-not-allowed hover:bg-white/20 transition-colors cursor-pointer"
         >
-          Next
+          <ChevronR />
         </button>
       </div>
 
-      <div className="text-center text-white/60 pb-4">
-        Showing {startIndex + 1}-{Math.min(endIndex, filteredTools.length)} of {filteredTools.length} tools
+      <div className="text-center text-white/80 pt-5">
+        Showing <span className="font-bold text-purple-200">{startIndex + 1}-{Math.min(endIndex, filteredTools.length)}</span> of <span className="font-bold text-purple-200">{filteredTools.length}</span> tools
       </div>
     </div>
   );
