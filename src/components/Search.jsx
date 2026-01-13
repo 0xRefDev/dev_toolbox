@@ -1,26 +1,23 @@
-import { useState } from "react"
 import { SearchIcon } from "@/icons/SearchIcon";
+import { useStore } from '@nanostores/react';
+import { searchQuery } from '@/stores/filterStore';
 
 export function Search() {
-  const [search, setSearch] = useState("");
-
-  const handleSearchValue = (value) => {
-    setSearch(value)
-  }
+  const $search = useStore(searchQuery);
 
   return (
     <div className="search-wrapper relative w-full flex justify-center py-4">
       <div className="w-full relative max-w-[450px]">
         <input
           type="search"
-          value={search}
+          value={$search}
           className="search-input w-full py-[10px] pl-13 pr-5 
                  bg-white/10 backdrop-blur-md
                  border border-white/20 rounded-full
                  text-white placeholder-white/70
                  outline-none transition-all duration-300
                  focus:bg-white/15 focus:border-white/30"
-          onChange={(e) => handleSearchValue(e.target.value)}
+          onChange={(e) => searchQuery.set(e.target.value)}
           placeholder="Search tools..."
         />
         <div className="absolute left-5 top-1/2 -translate-y-1/2 text-white/70 pointer-events-none transition-colors duration-300"><SearchIcon /></div>
