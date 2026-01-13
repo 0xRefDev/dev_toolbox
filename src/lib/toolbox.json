@@ -1,0 +1,1206 @@
+{
+  "resources": {
+    "Hosting": {
+      "description": "Free or freemium web hosting services",
+      "items": [
+        {
+          "name": "Award Space",
+          "url": "https://www.awardspace.com",
+          "type": "Freemium",
+          "description": "Free hosting with PHP & MySQL, no ads, and free subdomain",
+          "tags": [
+            "Hosting"
+          ]
+        },
+        {
+          "name": "Netlify",
+          "url": "https://app.netlify.com",
+          "type": "Freemium",
+          "description": "Modern web hosting for static sites and serverless functions",
+          "tags": [
+            "Hosting"
+          ]
+        },
+        {
+          "name": "Vercel",
+          "url": "https://vercel.com",
+          "type": "Freemium",
+          "description": "Deploy frontend apps with zero configuration and automatic scaling",
+          "tags": [
+            "Hosting"
+          ]
+        },
+        {
+          "name": "Render",
+          "url": "https://render.com",
+          "type": "Freemium",
+          "description": "Cloud platform for web apps, databases, and static sites",
+          "tags": [
+            "Hosting"
+          ]
+        },
+        {
+          "name": "Railway",
+          "url": "https://railway.app",
+          "type": "Freemium",
+          "description": "Deploy projects with instant previews and automatic deployments",
+          "tags": [
+            "Hosting"
+          ]
+        },
+        {
+          "name": "Fly.io",
+          "url": "https://fly.io",
+          "type": "Freemium",
+          "description": "Run apps globally with distributed infrastructure and edge computing",
+          "tags": [
+            "Hosting"
+          ]
+        }
+      ]
+    },
+    "Icons": {
+      "description": "Free icon libraries and resources",
+      "items": [
+        {
+          "name": "Hero Icons",
+          "url": "https://heroicons.com",
+          "type": "Free",
+          "description": "Beautiful hand-crafted SVG icons by the makers of Tailwind CSS",
+          "tags": [
+            "Icons",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Tabler Icons",
+          "url": "https://tablericons.com",
+          "type": "Free",
+          "description": "Over 5000+ customizable open source SVG icons",
+          "tags": [
+            "Icons",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Ionicons",
+          "url": "https://ionic.io/ionicons",
+          "type": "Free",
+          "description": "Premium open source icon library for web and mobile apps",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Animated Icons",
+          "url": "https://animatedicons.co",
+          "type": "Freemium",
+          "description": "Animated icons and illustrations with smooth transitions",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Flaticon",
+          "url": "https://www.flaticon.es",
+          "type": "Freemium",
+          "description": "Millions of vector icons in PNG, SVG, and icon fonts",
+          "tags": [
+            "Icons",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Icons8",
+          "url": "https://icons8.com/icons",
+          "type": "Freemium",
+          "description": "Icons, illustrations, photos, and design tools in one place",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Ray.so Icons",
+          "url": "https://icon.ray.so",
+          "type": "Free",
+          "description": "Collection of beautiful 3D icons for web projects",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Icons for Free",
+          "url": "https://icons-for-free.com",
+          "type": "Free",
+          "description": "Free icons in multiple formats and styles",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Logobook",
+          "url": "http://www.logobook.com",
+          "type": "Free",
+          "description": "Discover and explore creative logo designs and marks",
+          "tags": [
+            "Logos"
+          ]
+        },
+        {
+          "name": "SVG Repo",
+          "url": "https://www.svgrepo.com",
+          "type": "Free",
+          "description": "500,000+ open-licensed SVG vectors and icons",
+          "tags": [
+            "Icons",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Iconic",
+          "url": "https://iconic.app",
+          "type": "Free",
+          "description": "Free pixel-perfect icons with easy customization",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Icon Buddy",
+          "url": "https://iconbuddy.app",
+          "type": "Free",
+          "description": "Search, download, and customize thousands of icons",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Icon-Icons",
+          "url": "https://icon-icons.com",
+          "type": "Free",
+          "description": "Free icons in various formats and styles",
+          "tags": [
+            "Icons",
+            "PNG"
+          ]
+        },
+        {
+          "name": "Lordicon",
+          "url": "https://lordicon.com/icons",
+          "type": "Freemium",
+          "description": "Animated icons with smooth transitions and interactions",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Boxicons",
+          "url": "https://boxicons.com",
+          "type": "Free",
+          "description": "Simple open source icons with CSS, SVG, and font support",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "SVG Mix",
+          "url": "https://svgmix.com/es/icons",
+          "type": "Free",
+          "description": "Collection of SVG icons ready to use in projects",
+          "tags": [
+            "Icons",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Crypto Logos",
+          "url": "https://www.cryptologos.cc",
+          "type": "Free",
+          "description": "Cryptocurrency logos in SVG and PNG formats",
+          "tags": [
+            "Logos"
+          ]
+        },
+        {
+          "name": "Microsoft Fluent Icons",
+          "url": "https://github.com/microsoft/fluentui-system-icons",
+          "type": "Free",
+          "description": "Microsoft's modern icon system for Fluent design",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Thiings",
+          "url": "https://www.thiings.co/things",
+          "type": "Free",
+          "description": "Minimal line icons for modern interfaces",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Lucide Icons",
+          "url": "https://lucide.dev",
+          "type": "Free",
+          "description": "Beautiful & consistent icon toolkit for developers",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Feather Icons",
+          "url": "https://feathericons.com",
+          "type": "Free",
+          "description": "Simply beautiful open source icons",
+          "tags": [
+            "Icons"
+          ]
+        },
+        {
+          "name": "Phosphor Icons",
+          "url": "https://phosphoricons.com",
+          "type": "Free",
+          "description": "Flexible icon family for interfaces and diagrams",
+          "tags": [
+            "Icons"
+          ]
+        }
+      ]
+    },
+    "Practice Games": {
+      "description": "Interactive games to learn CSS and web development",
+      "items": [
+        {
+          "name": "Nikitahl CSS Games",
+          "url": "https://nikitahl.com/learn-css-by-playing-games",
+          "type": "Free",
+          "description": "Collection of games to practice CSS skills interactively",
+          "tags": [
+            "Learning"
+          ]
+        },
+        {
+          "name": "Flexbox Zombies",
+          "url": "https://mastery.games/flexboxzombies",
+          "type": "Freemium",
+          "description": "Master Flexbox by playing an interactive survival game",
+          "tags": [
+            "Learning"
+          ]
+        },
+        {
+          "name": "Flexbox Defense",
+          "url": "http://www.flexboxdefense.com",
+          "type": "Free",
+          "description": "Tower defense game to learn CSS Flexbox positioning",
+          "tags": [
+            "Learning"
+          ]
+        },
+        {
+          "name": "CSS Grid Garden",
+          "url": "https://cssgridgarden.com",
+          "type": "Free",
+          "description": "Game to learn CSS Grid by watering your garden",
+          "tags": [
+            "Learning"
+          ]
+        },
+        {
+          "name": "Flexbox Froggy",
+          "url": "https://flexboxfroggy.com",
+          "type": "Free",
+          "description": "Learn Flexbox by helping frogs reach their lily pads",
+          "tags": [
+            "Learning"
+          ]
+        }
+      ]
+    },
+    "Live Editors": {
+      "description": "Online code editors and IDEs",
+      "items": [
+        {
+          "name": "Codi.link",
+          "url": "https://codi.link",
+          "type": "Free",
+          "description": "Lightweight online code editor for HTML, CSS, and JavaScript",
+          "tags": [
+            "Editor"
+          ]
+        },
+        {
+          "name": "Google IDX",
+          "url": "https://idx.google.com",
+          "type": "Free",
+          "description": "Google's cloud-based development environment",
+          "tags": [
+            "Editor"
+          ]
+        },
+        {
+          "name": "CodeSandbox",
+          "url": "https://codesandbox.io",
+          "type": "Freemium",
+          "description": "Online IDE for rapid web development and prototyping",
+          "tags": [
+            "Editor"
+          ]
+        },
+        {
+          "name": "StackBlitz",
+          "url": "https://stackblitz.com",
+          "type": "Freemium",
+          "description": "Instant dev environments in your browser",
+          "tags": [
+            "Editor"
+          ]
+        }
+      ]
+    },
+    "API": {
+      "description": "Free and public APIs for development",
+      "items": [
+        {
+          "name": "Public APIs",
+          "url": "https://publicapis.dev",
+          "type": "Free",
+          "description": "Collective list of free APIs for software development",
+          "tags": [
+            "API"
+          ]
+        },
+        {
+          "name": "RapidAPI",
+          "url": "https://rapidapi.com",
+          "type": "Freemium",
+          "description": "Marketplace for APIs with testing and integration tools",
+          "tags": [
+            "API"
+          ]
+        },
+        {
+          "name": "JSONPlaceholder",
+          "url": "https://jsonplaceholder.typicode.com",
+          "type": "Free",
+          "description": "Free fake REST API for testing and prototyping",
+          "tags": [
+            "API"
+          ]
+        }
+      ]
+    },
+    "AI": {
+      "description": "AI chatbots and assistants",
+      "items": [
+        {
+          "name": "ChatGPT",
+          "url": "https://chat.openai.com",
+          "type": "Freemium",
+          "description": "OpenAI's conversational AI for various tasks and queries",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "DeepSeek",
+          "url": "https://www.deepseek.com",
+          "type": "Freemium",
+          "description": "AI assistant for coding and technical questions",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "Perplexity",
+          "url": "https://www.perplexity.ai",
+          "type": "Freemium",
+          "description": "AI-powered search engine with cited sources",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "Claude",
+          "url": "https://claude.ai",
+          "type": "Freemium",
+          "description": "Anthropic's AI assistant for analysis and conversations",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "Gemini",
+          "url": "https://gemini.google.com",
+          "type": "Freemium",
+          "description": "Google's multimodal AI assistant",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "Forefront",
+          "url": "https://www.forefront.ai",
+          "type": "Freemium",
+          "description": "AI platform with multiple models and capabilities",
+          "tags": [
+            "AI"
+          ]
+        },
+        {
+          "name": "Phind",
+          "url": "https://www.phind.com",
+          "type": "Freemium",
+          "description": "AI search engine optimized for developers",
+          "tags": [
+            "AI"
+          ]
+        }
+      ]
+    },
+    "JSON Tools": {
+      "description": "JSON generation and manipulation tools",
+      "items": [
+        {
+          "name": "JSON Data AI",
+          "url": "https://www.jsondataai.com",
+          "type": "Free",
+          "description": "Generate realistic JSON data using AI descriptions",
+          "tags": [
+            "JSON",
+            "AI"
+          ]
+        },
+        {
+          "name": "JSON Generator",
+          "url": "https://www.json-generator.com",
+          "type": "Free",
+          "description": "Generate custom JSON data for testing",
+          "tags": [
+            "JSON"
+          ]
+        },
+        {
+          "name": "Mockaroo",
+          "url": "https://www.mockaroo.com",
+          "type": "Freemium",
+          "description": "Generate realistic test data in JSON, CSV, and SQL formats",
+          "tags": [
+            "JSON"
+          ]
+        }
+      ]
+    },
+    "Image Generators": {
+      "description": "AI-powered image generation tools",
+      "items": [
+        {
+          "name": "Leonardo AI",
+          "url": "https://leonardo.ai",
+          "type": "Freemium",
+          "description": "Create stunning images and art with AI generation",
+          "tags": [
+            "AI",
+            "Image"
+          ]
+        },
+        {
+          "name": "Tensor Art",
+          "url": "https://tensor.art",
+          "type": "Freemium",
+          "description": "AI image generator with community models",
+          "tags": [
+            "AI",
+            "Image"
+          ]
+        },
+        {
+          "name": "Ideogram",
+          "url": "https://ideogram.ai",
+          "type": "Freemium",
+          "description": "Generate images with accurate text rendering",
+          "tags": [
+            "AI",
+            "Image"
+          ]
+        },
+        {
+          "name": "Nano Banana",
+          "url": "https://nanobanana.ai",
+          "type": "Freemium",
+          "description": "Simple AI image generation tool",
+          "tags": [
+            "AI",
+            "Image"
+          ]
+        }
+      ]
+    },
+    "Databases": {
+      "description": "Database tools and services",
+      "subcategories": {
+        "design_tools": {
+          "description": "Database design and management tools",
+          "items": [
+            {
+              "name": "DB Diagram",
+              "url": "https://dbdiagram.io/d",
+              "type": "Freemium",
+              "description": "Design database schemas with simple DSL language",
+              "tags": [
+                "Database"
+              ]
+            },
+            {
+              "name": "ChartDB",
+              "url": "https://app.chartdb.io",
+              "type": "Free",
+              "description": "Visual database design and documentation tool",
+              "tags": [
+                "Database"
+              ]
+            },
+            {
+              "name": "DrawSQL",
+              "url": "https://drawsql.app",
+              "type": "Freemium",
+              "description": "Create database diagrams collaboratively",
+              "tags": [
+                "Database"
+              ]
+            }
+          ]
+        },
+        "servers": {
+          "description": "Database hosting services",
+          "items": [
+            {
+              "name": "Supabase",
+              "url": "https://supabase.com",
+              "type": "Freemium",
+              "description": "Open source Firebase alternative with PostgreSQL",
+              "tags": [
+                "Database"
+              ]
+            },
+            {
+              "name": "Firebase",
+              "url": "https://firebase.google.com",
+              "type": "Freemium",
+              "description": "Google's platform for mobile and web app development",
+              "tags": [
+                "Database"
+              ]
+            },
+            {
+              "name": "Turso",
+              "url": "https://turso.tech",
+              "type": "Freemium",
+              "description": "SQLite for production at the edge",
+              "tags": [
+                "Database"
+              ]
+            },
+            {
+              "name": "PlanetScale",
+              "url": "https://planetscale.com",
+              "type": "Freemium",
+              "description": "MySQL-compatible serverless database platform",
+              "tags": [
+                "Database"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "Markdown": {
+      "description": "Markdown editors and tools",
+      "items": [
+        {
+          "name": "WriteMD",
+          "url": "https://write-md-three.vercel.app",
+          "type": "Free",
+          "description": "Clean and simple online Markdown editor",
+          "tags": [
+            "Markdown",
+            "Editor"
+          ]
+        },
+        {
+          "name": "StackEdit",
+          "url": "https://stackedit.io",
+          "type": "Free",
+          "description": "In-browser Markdown editor with sync capabilities",
+          "tags": [
+            "Markdown",
+            "Editor"
+          ]
+        },
+        {
+          "name": "Dillinger",
+          "url": "https://dillinger.io",
+          "type": "Free",
+          "description": "Cloud-enabled Markdown editor with live preview",
+          "tags": [
+            "Markdown",
+            "Editor"
+          ]
+        }
+      ]
+    },
+    "Design Patterns": {
+      "description": "Design patterns and best practices",
+      "items": [
+        {
+          "name": "Patterns.dev",
+          "url": "https://www.patterns.dev",
+          "type": "Free",
+          "description": "Modern web development patterns and techniques",
+          "tags": [
+            "Patterns",
+            "Learning"
+          ]
+        },
+        {
+          "name": "Refactoring Guru",
+          "url": "https://refactoring.guru/design-patterns",
+          "type": "Free",
+          "description": "Design patterns explained with examples",
+          "tags": [
+            "Patterns"
+          ]
+        }
+      ]
+    },
+    "Components": {
+      "description": "UI component libraries and collections",
+      "items": [
+        {
+          "name": "Uiverse",
+          "url": "https://uiverse.io/elements",
+          "type": "Free",
+          "description": "Community-driven library of UI elements",
+          "tags": [
+            "Components",
+            "UI"
+          ]
+        },
+        {
+          "name": "HyperUI",
+          "url": "https://www.hyperui.dev",
+          "type": "Free",
+          "description": "Free Tailwind CSS components for marketing sites",
+          "tags": [
+            "Components"
+          ]
+        },
+        {
+          "name": "Headless UI",
+          "url": "https://headlessui.com",
+          "type": "Free",
+          "description": "Unstyled, accessible UI components",
+          "tags": [
+            "Components"
+          ]
+        },
+        {
+          "name": "LDRS Loaders",
+          "url": "https://uiball.com/ldrs",
+          "type": "Free",
+          "description": "Modern loading spinners and animations",
+          "tags": [
+            "Components",
+            "Loaders"
+          ]
+        },
+        {
+          "name": "Shadcn UI",
+          "url": "https://ui.shadcn.com",
+          "type": "Free",
+          "description": "Beautifully designed components built with Radix UI",
+          "tags": [
+            "Components"
+          ]
+        },
+        {
+          "name": "DaisyUI",
+          "url": "https://daisyui.com",
+          "type": "Free",
+          "description": "Tailwind CSS component library",
+          "tags": [
+            "Components"
+          ]
+        }
+      ]
+    },
+    "Design Inspiration": {
+      "description": "Design inspiration and showcases",
+      "items": [
+        {
+          "name": "UI8",
+          "url": "https://ui8.net",
+          "type": "Freemium",
+          "description": "Premium design resources and UI kits",
+          "tags": [
+            "Inspiration"
+          ]
+        },
+        {
+          "name": "Refero",
+          "url": "https://refero.design",
+          "type": "Free",
+          "description": "Collection of design references and inspiration",
+          "tags": [
+            "Inspiration"
+          ]
+        },
+        {
+          "name": "Dribbble",
+          "url": "https://dribbble.com",
+          "type": "Freemium",
+          "description": "Community of designers showcasing their work",
+          "tags": [
+            "Inspiration"
+          ]
+        },
+        {
+          "name": "Behance",
+          "url": "https://www.behance.net",
+          "type": "Free",
+          "description": "Adobe's platform for creative portfolios",
+          "tags": [
+            "Inspiration"
+          ]
+        },
+        {
+          "name": "Awwwards",
+          "url": "https://www.awwwards.com",
+          "type": "Free",
+          "description": "Awards for design, creativity and innovation",
+          "tags": [
+            "Inspiration"
+          ]
+        }
+      ]
+    },
+    "Libraries": {
+      "description": "JavaScript and CSS libraries",
+      "subcategories": {
+        "animations": {
+          "description": "Animation libraries",
+          "items": [
+            {
+              "name": "React Awesome Reveal",
+              "url": "https://react-awesome-reveal.morello.dev",
+              "type": "Free",
+              "description": "React components for scroll animations",
+              "tags": [
+                "Animation"
+              ]
+            },
+            {
+              "name": "Framer Motion",
+              "url": "https://www.framer.com/motion",
+              "type": "Free",
+              "description": "Production-ready animation library for React",
+              "tags": [
+                "Animation"
+              ]
+            },
+            {
+              "name": "AOS",
+              "url": "https://michalsnik.github.io/aos",
+              "type": "Free",
+              "description": "Animate elements on scroll with CSS3",
+              "tags": [
+                "Animation"
+              ]
+            }
+          ]
+        },
+        "toast": {
+          "description": "Toast notification libraries",
+          "items": [
+            {
+              "name": "Toast Pheralb",
+              "url": "https://toast.pheralb.dev",
+              "type": "Free",
+              "description": "Beautiful toast notifications for web apps",
+              "tags": [
+                "Notifications",
+                "Toast"
+              ]
+            },
+            {
+              "name": "React Hot Toast",
+              "url": "https://react-hot-toast.com",
+              "type": "Free",
+              "description": "Smoking hot React notifications",
+              "tags": [
+                "Notifications",
+                "Toast"
+              ]
+            },
+            {
+              "name": "Sonner",
+              "url": "https://sonner.emilkowal.ski",
+              "type": "Free",
+              "description": "Opinionated toast component for React",
+              "tags": [
+                "Notifications",
+                "React"
+              ]
+            }
+          ]
+        },
+        "charts": {
+          "description": "Chart and data visualization libraries",
+          "items": [
+            {
+              "name": "React Chart.js 2",
+              "url": "https://react-chartjs-2.js.org",
+              "type": "Free",
+              "description": "React wrapper for Chart.js library",
+              "tags": [
+                "Charts"
+              ]
+            },
+            {
+              "name": "Recharts",
+              "url": "https://recharts.org",
+              "type": "Free",
+              "description": "Composable charting library built on React",
+              "tags": [
+                "Charts",
+                "Composable"
+              ]
+            },
+            {
+              "name": "Chart.js",
+              "url": "https://www.chartjs.org",
+              "type": "Free",
+              "description": "Simple yet flexible JavaScript charting",
+              "tags": [
+                "Charts"
+              ]
+            }
+          ]
+        },
+        "parallax": {
+          "description": "Parallax effect libraries",
+          "items": [
+            {
+              "name": "Atropos",
+              "url": "https://atroposjs.com",
+              "type": "Free",
+              "description": "3D parallax hover effects for any element",
+              "tags": [
+                "Parallax",
+                "Hover"
+              ]
+            },
+            {
+              "name": "Rellax",
+              "url": "https://dixonandmoe.com/rellax",
+              "type": "Free",
+              "description": "Lightweight parallax scrolling library",
+              "tags": [
+                "Parallax"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "Images": {
+      "description": "Image tools and resources",
+      "items": [
+        {
+          "name": "Squoosh",
+          "url": "https://squoosh.app",
+          "description": "Compress and optimize images in your browser",
+          "type": "Free",
+          "tags": [
+            "Image",
+            "Optimizer"
+          ]
+        },
+        {
+          "name": "Picsum Photos",
+          "url": "https://picsum.photos",
+          "description": "Random placeholder images for mockups",
+          "type": "Free",
+          "tags": [
+            "Image",
+            "Placeholder"
+          ]
+        },
+        {
+          "name": "SVG OMG",
+          "url": "https://jakearchibald.github.io/svgomg",
+          "description": "Optimize SVG files with visual preview",
+          "type": "Free",
+          "tags": [
+            "SVG",
+            "Optimizer"
+          ]
+        },
+        {
+          "name": "Free SVG",
+          "url": "https://freesvg.org",
+          "type": "Free",
+          "description": "Public domain SVG images and clipart",
+          "tags": [
+            "SVG",
+            "Free"
+          ]
+        },
+        {
+          "name": "fffuel",
+          "url": "https://www.fffuel.co",
+          "description": "Generate SVG patterns and backgrounds",
+          "type": "Free",
+          "tags": [
+            "SVG",
+            "Patterns"
+          ]
+        },
+        {
+          "name": "Magic Pattern",
+          "url": "https://www.magicpattern.design/tools",
+          "type": "Free",
+          "description": "Create unique patterns and backgrounds",
+          "tags": [
+            "Patterns",
+            "Design"
+          ]
+        },
+        {
+          "name": "Remove.bg",
+          "url": "https://www.remove.bg/es",
+          "description": "Remove image backgrounds automatically",
+          "type": "Freemium",
+          "tags": [
+            "Image",
+            "Background",
+            "AI"
+          ]
+        },
+        {
+          "name": "Unsplash",
+          "url": "https://unsplash.com",
+          "type": "Free",
+          "description": "High-quality free stock photos",
+          "tags": [
+            "Photos",
+            "Free"
+          ]
+        },
+        {
+          "name": "Pexels",
+          "url": "https://www.pexels.com",
+          "type": "Free",
+          "description": "Free stock photos and videos",
+          "tags": [
+            "Photos",
+            "Videos"
+          ]
+        }
+      ]
+    },
+    "SVG Tools": {
+      "description": "SVG tools and converters",
+      "items": [
+        {
+          "name": "SVG to Code",
+          "url": "https://nikitahl.github.io/svg-2-code",
+          "type": "Free",
+          "description": "Convert SVG to JSX, React, or other formats",
+          "tags": [
+            "SVG",
+            "Code"
+          ]
+        },
+        {
+          "name": "SVG Converter",
+          "url": "https://svgco.de",
+          "type": "Free",
+          "description": "Convert and optimize SVG files online",
+          "tags": [
+            "SVG",
+            "Optimizer"
+          ]
+        }
+      ]
+    },
+    "Background Generators": {
+      "description": "Background generators and resources",
+      "items": [
+        {
+          "name": "BGJar",
+          "url": "https://bgjar.com",
+          "type": "Free",
+          "description": "Generate custom SVG background patterns",
+          "tags": [
+            "Background",
+            "SVG"
+          ]
+        },
+        {
+          "name": "BG Ibelick",
+          "url": "https://bg.ibelick.com",
+          "type": "Free",
+          "description": "Collection of modern background patterns",
+          "tags": [
+            "Background",
+            "Modern"
+          ]
+        },
+        {
+          "name": "Hero Patterns",
+          "url": "https://heropatterns.com",
+          "type": "Free",
+          "description": "Repeatable SVG background patterns",
+          "tags": [
+            "Background",
+            "SVG"
+          ]
+        },
+        {
+          "name": "Cool Backgrounds",
+          "url": "https://coolbackgrounds.io",
+          "type": "Free",
+          "description": "Generate cool backgrounds for websites",
+          "tags": [
+            "Background",
+            "Generator"
+          ]
+        }
+      ]
+    },
+    "Color Palettes": {
+      "description": "Color palette generators and tools",
+      "items": [
+        {
+          "name": "UI Colors",
+          "url": "https://uicolors.app/create",
+          "type": "Free",
+          "description": "Generate Tailwind CSS color palettes",
+          "tags": [
+            "Colors",
+            "Generator"
+          ]
+        },
+        {
+          "name": "Coolors",
+          "url": "https://coolors.co",
+          "type": "Freemium",
+          "description": "Fast color palette generator",
+          "tags": [
+            "Colors",
+            "Generator"
+          ]
+        },
+        {
+          "name": "Color Hunt",
+          "url": "https://colorhunt.co",
+          "type": "Free",
+          "description": "Curated collection of color palettes",
+          "tags": [
+            "Colors",
+            "Palette"
+          ]
+        }
+      ]
+    },
+    "Web Tools": {
+      "description": "Various web development tools",
+      "items": [
+        {
+          "name": "Cool Contrast",
+          "url": "https://coolcontrast.vercel.app",
+          "description": "Check color contrast accessibility",
+          "type": "Free",
+          "tags": [
+            "Accessibility",
+            "Tool"
+          ]
+        },
+        {
+          "name": "Shots",
+          "url": "https://shots.co",
+          "description": "Create beautiful mockups and screenshots",
+          "type": "Freemium",
+          "tags": [
+            "Mockups",
+            "Screenshots"
+          ]
+        },
+        {
+          "name": "Can I Use",
+          "url": "https://caniuse.com",
+          "type": "Free",
+          "description": "Browser support tables for web technologies",
+          "tags": [
+            "Compatibility",
+            "Reference"
+          ]
+        }
+      ]
+    },
+    "Fonts": {
+      "description": "Font libraries and resources",
+      "items": [
+        {
+          "name": "DirtyLine Studio",
+          "url": "https://dirtylinestudio.com",
+          "type": "Freemium",
+          "description": "Unique and creative font designs",
+          "tags": [
+            "Fonts",
+            "Typography"
+          ]
+        },
+        {
+          "name": "Fontsource",
+          "url": "https://fontsource.org",
+          "type": "Free",
+          "description": "Self-hosted open source fonts",
+          "tags": [
+            "Fonts",
+            "NPM"
+          ]
+        },
+        {
+          "name": "Google Fonts",
+          "url": "https://fonts.google.com",
+          "type": "Free",
+          "description": "Free and open source font library",
+          "tags": [
+            "Fonts"
+          ]
+        },
+        {
+          "name": "Font Squirrel",
+          "url": "https://www.fontsquirrel.com",
+          "type": "Free",
+          "description": "Commercial-use free fonts",
+          "tags": [
+            "Fonts"
+          ]
+        },
+        {
+          "name": "DaFont",
+          "url": "https://www.dafont.com",
+          "type": "Free",
+          "description": "Archive of downloadable fonts",
+          "tags": [
+            "Fonts"
+          ]
+        }
+      ]
+    }
+  }
+}
