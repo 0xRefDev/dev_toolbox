@@ -39,6 +39,9 @@
       ],
       "@/icons/*": [
         "src/icons/*"
+      ],
+      "@/stores/*": [
+        "src/stores/*"
       ]
     },
     "jsx": "react-jsx",
