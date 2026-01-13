@@ -1,16 +1,44 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-
-// Components
 import { Search } from "@/components/Search.jsx";
 import NavBar from "@/components/NavBar.astro";
-import ToolCard from "@/components/ToolCard.astro";
-
-// Data
+import { ToolsList } from "@/components/ToolsList.jsx";
 import data from "@/lib/toolbox.json";
+import SocialsFooter from "@/components/SocialsFooter.astro";
 
 const categories = Object.entries(data.resources);
-const categoriesCount = categories.length;
+
+function getAllItems(categoryData: any[], categoryKey: string) {
+  const items = [];
+
+  if (categoryData.items) {
+    items.push(
+      ...categoryData.items.map((item: any) => ({
+        ...item,
+        category: categoryKey,
+      })),
+    );
+  }
+
+  if (categoryData.subcategories) {
+    Object.values(categoryData.subcategories).forEach((subcat: any) => {
+      if (subcat.items) {
+        items.push(
+          ...subcat.items.map((item: any) => ({
+            ...item,
+            category: categoryKey,
+          })),
+        );
+      }
+    });
+  }
+
+  return items;
+}
+
+const allTools = categories.flatMap(([categoryKey, categoryData]: any) =>
+  getAllItems(categoryData, categoryKey),
+);
 ---
 
 <Layout title="Dev Toolbox" hideContent={false}>
@@ -29,9 +57,22 @@ const categoriesCount = categories.length;
 
   <Search client:load />
 
-  <article class="grid grid-cols-3 gap-4 p-8">
-    <ToolCard toolData={[]} />
-  </article>
+  <ToolsList client:only="react" allTools={allTools} />
+
+  <div class="mt-5 h-0.5 w-[80%] mx-auto bg-purple-100/40 rounded-full"></div>
+
+  <section class="py-2">
+    <div class="flex flex-col items-center gap-2">
+      <h2 class="text-center text-white font-bold text-xl">
+        Follow me on my social media!
+      </h2>
+      <h3 class="text-white">
+        Made with ❤️ by <b>0xRef</b> &copy; 2026 Dev Toolbox
+      </h3>
+    </div>
+
+    <SocialsFooter />
+  </section>
 </Layout>
 
 <style>
@@ -48,56 +89,23 @@ const categoriesCount = categories.length;
     -webkit-background-clip: text;
     background-clip: text;
   }
+
+  :global(.card-3d) {
+    transition:
+      transform 0.3s ease,
+      box-shadow 0.3s ease;
+    transform-style: preserve-3d;
+  }
+
+  :global(.card-3d:hover) {
+    transform: scale3d(1.015, 1.015, 1.015) translateZ(20px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+  }
+
+  :global(.line-clamp-2) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 </style>
-
-
-<!-- Other view -->
-<!-- {categories.map(([categoryKey, categoryData]) => (
-        <div class="border p-4 rounded">
-          <h3 class="font-bold text-xl mb-2">{categoryKey}</h3>
-          <p class="text-sm mb-4">{categoryData.description}</p>
-
-          {"items" in categoryData ? (
-            <ul>
-              {categoryData.items.map((item) => (
-                <li>
-                  <a
-                    href={item.url}
-                    target="_blank"
-                    class="text-blue-500 hover:underline"
-                  >
-                    {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          ) : (
-            "subcategories" in categoryData && (
-              <div class="flex flex-col gap-4">
-                {Object.entries(categoryData.subcategories).map(
-                  ([subKey, subData]) => (
-                    <div>
-                      <h4 class="font-bold text-lg mb-1 capitalize text-gray-200">
-                        {subKey.replace("_", " ")}
-                      </h4>
-                      <ul>
-                        {subData.items.map((item) => (
-                          <li>
-                            <a
-                              href={item.url}
-                              target="_blank"
-                              class="text-blue-500 hover:underline"
-                            >
-                              {item.name}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  )
-                )}
-              </div>
-            )
-          )}
-        </div>
-      ))} -->
