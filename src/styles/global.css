@@ -189,3 +189,31 @@ main::-webkit-scrollbar-thumb {
                      var(--sb-track-color);
   }
 }
+
+#cat_filters {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #62719f;
+  --sb-size-horizontal: 5px;
+}
+
+#cat_filters::-webkit-scrollbar {
+  height: var(--sb-size-horizontal)
+}
+
+#cat_filters::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 10px;
+}
+
+#cat_filters::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 10px;
+  
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  #cat_filters {
+    scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+}
