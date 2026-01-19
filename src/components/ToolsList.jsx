@@ -53,9 +53,9 @@ export function ToolsList({ allTools }) {
           <button
             key={category}
             onClick={() => handleCategoryChange(category)}
-            className={`rounded-lg w-fit px-4 py-1 flex items-center justify-center cursor-pointer shadow-xl transition-all whitespace-nowrap ${$category === category
-              ? "bg-white/25 border-2 border-white/50"
-              : "bg-white/10 border border-white/25 hover:bg-white/15"
+            className={`rounded-full w-fit px-4 py-1 flex items-center justify-center cursor-pointer shadow-xl transition-all whitespace-nowrap ${$category === category
+              ? "bg-white/25 outline-2 outline-white/50"
+              : "bg-white/10 outline outline-white/25 hover:bg-white/15"
               }`}
           >
             <h2 className="text-center text-white text-[0.8rem]">
