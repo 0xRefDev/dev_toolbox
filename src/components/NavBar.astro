@@ -19,14 +19,27 @@
         class="bg-blue-100/20 hover:bg-white/20 transition-colors backdrop-blur-lg shadow-md border border-white/12 px-4 rounded-full text-[1.1rem]"
         >How to collab</a
       >
-      <a
-        href="/our-purpose"
-        class="bg-blue-100/20 hover:bg-white/20 transition-colors backdrop-blur-lg shadow-md border border-white/12 px-4 rounded-full text-[1.1rem]"
-        >Our Purpose</a
+      <button
+        id="open-purpose-modal"
+        class="bg-blue-100/20 hover:bg-white/20 transition-colors backdrop-blur-lg shadow-md border border-white/12 px-4 rounded-full text-[1.1rem] cursor-pointer"
+        >Our Purpose</button
       >
     </li>
   </ul>
 </nav>
+
+<script>
+  import { isPurposeModalOpen } from '@/stores/modalStore';
+  
+  document.addEventListener('DOMContentLoaded', () => {
+    const button = document.getElementById('open-purpose-modal');
+    if (button) {
+      button.addEventListener('click', () => {
+        isPurposeModalOpen.set(true);
+      });
+    }
+  });
+</script>
 
 <style>
   .glass-version {
