@@ -1,9 +1,14 @@
 import { SearchIcon } from "@/icons/SearchIcon";
 import { useStore } from '@nanostores/react';
 import { searchQuery } from '@/stores/filterStore';
+import { Cancel } from "@/icons/Cancel";
 
 export function Search() {
   const $search = useStore(searchQuery);
+
+  const handleClear = () => {
+    searchQuery.set('');
+  };
 
   return (
     <div className="search-wrapper relative w-full flex justify-center py-4">
@@ -21,6 +26,7 @@ export function Search() {
           placeholder="Search tools..."
         />
         <div className="absolute left-5 top-1/2 -translate-y-1/2 text-white/70 pointer-events-none transition-colors duration-300"><SearchIcon /></div>
+        { $search != "" && <button className="absolute right-5 top-1/2 -translate-y-1/2 text-white/70 transition-colors duration-300 cursor-pointer z-9999" onClick={handleClear}><Cancel /></button> }
       </div>
 
       <style jsx>{`
