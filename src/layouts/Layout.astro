@@ -4,6 +4,8 @@ import "@/styles/global.css";
 import BlueBlob from "@/assets/blobs/blue-blob.astro";
 import YellowBlob from "@/assets/blobs/yellow-blob.astro";
 
+import { PurposeModal } from "@/components/PurposeModal.jsx";
+
 const { title, hideContent } = Astro.props;
 ---
 
@@ -66,6 +68,7 @@ const { title, hideContent } = Astro.props;
 				<div class="notch-corner-right"></div>
 				<slot />
 			</section>
+			<PurposeModal client:only="react" />
 		</main>
 	</body>
 </html>
