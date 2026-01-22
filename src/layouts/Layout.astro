@@ -46,14 +46,14 @@ const { title, hideContent } = Astro.props;
 		<meta name="og:locale" content="en_US" />
 		<title>{title}</title>
 	</head>
-	<body class={hideContent ? "overflow-hidden pt-0" : "overflow-hidden pt-0 bg-gray-300"}>
+	<body class={hideContent ? "overflow-hidden pt-0" : "pt-0 bg-gray-300"}>
 		<main
-			class={`bg-gray-300 h-dvh relative ${hideContent ? "overflow-hidden" : "overflow-x-hidden"} flex justify-center px-16 pb-0 ${hideContent ? "pt-12" : "pt-8.5"}`}
+			class={`bg-gray-300 min-h-dvh relative ${hideContent ? "overflow-hidden" : "overflow-x-hidden"} flex justify-center px-16 pb-0 ${hideContent ? "pt-12" : "pt-8.5"}`}
 		>
 			<BlueBlob />
 			<YellowBlob />
 			<section
-				class={`notch-section rounded-t-4xl bg-dark-200/60 p-4 ${hideContent ? "mt-5 h-dvh" : "h-[85rem]"}`}
+				class={`notch-section rounded-t-4xl bg-dark-200/60 p-4 ${hideContent ? "mt-5 min-h-dvh" : "min-h-340"}`}
 				style="clip-path: polygon(
 			0 0px,
 			calc(50% - 150px) 0.5px,
