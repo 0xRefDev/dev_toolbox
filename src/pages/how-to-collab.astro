@@ -1,7 +1,196 @@
 ---
-import Layout from "../layouts/Layout.astro"
+import Layout from "@/layouts/Layout.astro";
+import NavBar from "@/components/NavBar.astro";
+import { Check } from "@/icons/Check.jsx";
+import { Cancel } from "@/icons/Cancel.jsx";
 ---
 
-<Layout>
-  
+<Layout title={"How to collab | Dev Toolbox"}>
+  <NavBar />
+  <h2
+    class="bg-gradient-electric bg-clip-text text-transparent text-[1.8rem] flex justify-center gap-6 w-fit absolute -top-1 left-1/2 -translate-x-1/2 z-200 font-medium uppercase do-hyeon"
+  >
+    How to collab
+  </h2>
+
+  <h1
+    class="mt-11 text-center text-white font-bold text-[2.5rem] max-w-2xl mx-auto leading-tight title-inner-shadow inter"
+  >
+    Thank you for wanting to collaborate with us!
+  </h1>
+
+  <div
+    class="w-96 mx-auto h-1 bg-linear-to-r from-transparent via-purple-400/60 to-transparent rounded-full mt-3"
+  >
+  </div>
+
+  <p
+    class="text-white/80 text-center mt-7 max-w-2xl mx-auto text-lg inter leading-relaxed px-9"
+  >
+    Use this guide for the essential steps or refer to the
+    <span
+      class="bg-purple-400/20 px-2 py-1 rounded-md border border-purple-400/30 font-mono text-purple-200"
+    >
+      CONTRIBUTING.md
+    </span>
+    file for complete details.
+  </p>
+
+  <section class="max-w-xl mx-auto px-4 pb-20 text-white inter">
+    <article class="my-11">
+      <h2 class="text-2xl font-semibold mb-4">Follow these steps:</h2>
+      <h3
+        class="text-purple-100 font-semibold text-2xl mb-6 flex items-center gap-3"
+      >
+        Do you have a useful resource?
+      </h3>
+      <p class="text-white/70 mb-4 text-lg leading-relaxed pl-12">
+        Whether it's tools, libraries, icons, or images for developers. It must
+        be:
+      </p>
+      <ul class="space-y-2 pl-12">
+        <li class="flex items-center gap-3 text-white/80 text-lg">
+          <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+          Free / Freemium
+        </li>
+        <li class="flex items-center gap-3 text-white/80 text-lg">
+          <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+          Up-to-date
+        </li>
+        <li class="flex items-center gap-3 text-white/80 text-lg">
+          <span class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span>
+          Without excessive ads
+        </li>
+      </ul>
+    </article>
+
+    <article class="mb-16">
+      <h3
+        class="text-purple-300 font-semibold text-2xl mb-6 flex items-center gap-3"
+      >
+        Prepare it using this format
+      </h3>
+      <p class="text-white/70 mb-6 text-lg leading-relaxed pl-12">
+        You must create a pull request with the added tool in the
+        <code
+          class="bg-purple-400/20 px-2 py-0.5 rounded text-purple-200 font-mono text-sm"
+          >toolbox.json</code
+        >
+        file located in
+        <code
+          class="bg-purple-400/20 px-2 py-0.5 rounded text-purple-200 font-mono text-sm"
+          >src/lib/toolbox.json</code
+        >
+        and the logo in
+        <code
+          class="bg-purple-400/20 px-2 py-0.5 rounded text-purple-200 font-mono text-sm"
+          >src/lib/logos.ts</code
+        >, using the same format as the other tools.
+      </p>
+
+      <div
+        class="bg-slate-900/50 border border-purple-400/20 rounded-xl p-6 font-mono text-sm overflow-x-auto ml-12"
+      >
+        <pre
+          class="text-purple-200"><code>{`{
+            "name": "Tool Name",
+            "url": "https://toolurl.com",
+            "type": "Free, Freemium or both",
+            "description": "Tool Description",
+            "tags": ["Tag1", "Tag2", "Tag3"]
+          }`}</code></pre>
+      </div>
+    </article>
+
+    <article class="mb-16">
+      <h3
+        class="text-purple-300 font-semibold text-2xl mb-6 flex items-center gap-3"
+      >
+        Send it in one of these ways
+      </h3>
+      <p class="text-white/70 mb-4 text-lg leading-relaxed pl-12">
+        You can send the pull request to the repository or suggest via Discord:
+      </p>
+      <ul class="space-y-3 pl-12">
+        <li class="flex items-start gap-3 text-white/80 text-lg">
+          <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2.5"></span>
+          <div>
+            <strong class="text-white">Github:</strong> Open a pull request using
+            the template
+          </div>
+        </li>
+        <li class="flex items-start gap-3 text-white/80 text-lg">
+          <span class="w-1.5 h-1.5 bg-purple-400 rounded-full mt-2.5"></span>
+          <div>
+            <strong class="text-white">Discord:</strong> Send the tool URL and the
+            use purpose
+          </div>
+        </li>
+      </ul>
+    </article>
+
+    <article class="border-t border-white/10 pt-12">
+      <h3 class="text-white font-bold text-2xl mb-4 flex items-center gap-3">
+        <span class="text-2xl">⚡</span>
+        Is this your first time contributing?
+      </h3>
+      <p class="text-white/80 mb-6 text-lg leading-relaxed">
+        Review the full
+        <code
+          class="bg-purple-400/20 px-2 py-1 rounded text-purple-200 font-mono text-sm"
+          >CONTRIBUTING.md</code
+        >
+        file for complete information and rules.
+      </p>
+
+      <h4 class="text-purple-200 font-semibold text-xl mb-4">Key rules:</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-2">
+        <div class="flex items-center gap-1 text-green-700 text-lg">
+          <Check />
+          <span class="text-white/80">Valid links</span>
+        </div>
+        <div class="flex items-center gap-1 text-green-700 text-lg">
+          <Check />
+          <span class="text-white/80">Valid categories</span>
+        </div>
+        <div class="flex items-center gap-1 text-red-400 text-lg">
+          <Cancel />
+          <span class="text-white/80">No duplicates</span>
+        </div>
+        <div class="flex items-center gap-1 text-red-400 text-lg">
+          <Cancel />
+          <span class="text-white/80">No broken links</span>
+        </div>
+        <div class="flex items-center gap-1 text-red-400 text-lg">
+          <Cancel />
+          <span class="text-white/80">No pirated resources</span>
+        </div>
+        <div class="flex items-center gap-1 text-red-400 text-lg">
+          <Cancel />
+          <span class="text-white/80">No affiliate links</span>
+        </div>
+      </div>
+    </article>
+  </section>
 </Layout>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+  .do-hyeon {
+    font-family: "Do Hyeon";
+  }
+
+  .inter {
+    font-family: "Inter";
+  }
+
+  .title-inner-shadow {
+    background-color: white;
+    color: transparent;
+    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.622);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+</style>
