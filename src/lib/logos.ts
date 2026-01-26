@@ -9,7 +9,7 @@ export const logos: Record<string, string> = {
   
   // Icons
   "Hero Icons": "https://heroicons.com/_next/static/media/favicon-32x32.2a23e45f.png",
-  "Tabler Icons": "https://tabler.io/favicon.ico?favicon.d0511433.ico",
+  "Tabler Icons": "https://tabler.io/favicon.ico?favicon.d0511433.svg",
   "Ionicons": "https://ionic.io/ionicons/assets/img/meta/favicon-96x96.png",
   "Flaticon": "https://media.flaticon.com/dist/min/img/favicon.ico",
   "Icons8": "https://img.icons8.com/color/96/icons8.png",

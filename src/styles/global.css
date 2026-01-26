@@ -114,7 +114,6 @@ body::before {
 
 .notch-section {
   position: relative;
-  width: 100%;
   border: 1px solid rgba(255, 255, 255, 0.25);
   overflow: hidden;
   backdrop-filter: blur(5rem);
@@ -184,13 +183,12 @@ body::-webkit-scrollbar-track {
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
-  
+
 }
 
 @supports not selector(::-webkit-scrollbar) {
   body {
-    scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
 
@@ -212,13 +210,12 @@ body::-webkit-scrollbar-thumb {
 #cat_filters::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
   border-radius: 10px;
-  
+
 }
 
 @supports not selector(::-webkit-scrollbar) {
   #cat_filters {
-    scrollbar-color: var(--sb-thumb-color)
-                     var(--sb-track-color);
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
   }
 }
 
@@ -231,3 +228,6 @@ input[type="search"]::-webkit-search-decoration {
 input::-ms-clear {
   display: none;
 }
+
+
+/* Ajustar un poco la navbar al pasar a medidas md para que no se tape con el notch, y ajustar tamaño de textos y asi en md y lg */

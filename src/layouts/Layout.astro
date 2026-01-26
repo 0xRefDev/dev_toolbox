@@ -46,14 +46,14 @@ const { title, hideContent } = Astro.props;
 		<meta name="og:locale" content="en_US" />
 		<title>{title}</title>
 	</head>
-	<body class={hideContent ? "overflow-hidden pt-0" : "pt-0 bg-gray-300"}>
+	<body class={hideContent ? "overflow-hidden pt-0" : "pt-0"}>
 		<main
-			class={`bg-gray-300 min-h-dvh relative ${hideContent ? "overflow-hidden" : "overflow-x-hidden"} flex justify-center px-16 pb-0 ${hideContent ? "pt-12" : "pt-8.5"}`}
+			class={`bg-gray-300 min-h-dvh relative ${hideContent ? "overflow-hidden" : "overflow-x-hidden"} flex justify-center px-2 lg:px-16 pb-0 ${hideContent ? "pt-1 md:pt-12" : "pt-4"}`}
 		>
 			<BlueBlob />
 			<YellowBlob />
 			<section
-				class={`notch-section rounded-t-4xl bg-dark-200/60 p-4 ${hideContent ? "mt-5 min-h-dvh" : "min-h-340"}`}
+				class={`sm:w-full notch-section rounded-t-4xl bg-dark-200/60 p-4 ${hideContent ? "mt-3 sm:mt-5 min-h-dvh" : "min-h-340"}`}
 				style="clip-path: polygon(
 			0 0px,
 			calc(50% - 150px) 0.5px,
@@ -81,45 +81,81 @@ const { title, hideContent } = Astro.props;
 		overflow: hidden;
 		backdrop-filter: blur(5rem);
 	}
-	.notch-section::before {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		width: 280px;
-		height: 35px;
-		background: #0e0b0b;
-		border-bottom-left-radius: 32px;
-		border-bottom-right-radius: 32px;
-		border-bottom: 1px solid rgba(255, 255, 255, 0.25);
-		z-index: 100;
+
+	@media (max-width: 639px) {
+		.notch-section::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 200px;
+			height: 30px;
+			background: #0e0b0b;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+			z-index: 100;
+		}
+		.notch-section::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: calc(50% - 100px - 10px);
+			width: 12px;
+			height: 12px;
+			background-color: transparent;
+			border-right: 1px solid rgba(255, 255, 255, 0);
+			box-shadow: 5px -5px 0 0 transparent;
+			z-index: 100;
+		}
+		.notch-corner-right {
+			position: absolute;
+			top: 0;
+			right: calc(50% - 100px - 10px);
+			width: 12px;
+			height: 12px;
+			background-color: transparent;
+			box-shadow: -5px -5px 0 0 transparent;
+			border-left: 1px solid rgba(255, 255, 255, 0);
+			z-index: 100;
+		}
 	}
 
-	.notch-section::after {
-		content: "";
-		position: absolute;
-		top: 0;
-		left: calc(50% - 140px - 13px);
-		width: 15px;
-		height: 15px;
-		background-color: transparent;
-		border-top-right-radius: 32px;
-		border-right: 1px solid rgba(255, 255, 255, 0.1);
-		box-shadow: 5px -5px 0 0 #0e0b0b;
-		z-index: 100;
-	}
-
-	.notch-corner-right {
-		position: absolute;
-		top: 0;
-		right: calc(50% - 140px - 13px);
-		width: 15px;
-		height: 15px;
-		background-color: transparent;
-		border-top-left-radius: 32px;
-		box-shadow: -5px -5px 0 0 #0e0b0b;
-		border-left: 1px solid rgba(255, 255, 255, 0.1);
-		z-index: 100;
+	/* Tablet (640px - 1023px) */
+	@media (min-width: 640px) and (max-width: 1023px) {
+		.notch-section::before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 240px;
+			height: 33px;
+			background: #0e0b0b;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+			z-index: 100;
+		}
+		.notch-section::after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: calc(50% - 120px - 12px);
+			width: 14px;
+			height: 14px;
+			background-color: transparent;
+			border-right: 1px solid rgba(255, 255, 255, 0.1);
+			box-shadow: 5px -5px 0 0 #0e0b0b;
+			z-index: 100;
+		}
+		.notch-corner-right {
+			position: absolute;
+			top: 0;
+			right: calc(50% - 120px - 12px);
+			width: 14px;
+			height: 14px;
+			background-color: transparent;
+			box-shadow: -5px -5px 0 0 #0e0b0b;
+			border-left: 1px solid rgba(255, 255, 255, 0.1);
+			z-index: 100;
+		}
 	}
 </style>
